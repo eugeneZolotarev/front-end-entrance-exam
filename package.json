@@ -20,6 +20,15 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "dependencies": {
+    "esbuild": "^0.20.2",
+    "html2pdf.js": "^0.10.3",
+    "nanoid": "^3.3.7",
+    "picocolors": "^1.0.1",
+    "postcss": "^8.4.38",
+    "rollup": "^4.18.0",
+    "source-map-js": "^1.2.0"
+  },
   "devDependencies": {
     "vite": "^5.2.0"
   }

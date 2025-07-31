@@ -124,8 +124,9 @@ body {
   gap: 10px;
   font-size: 10px;
   font-weight: 500;
-  line-height: 1.04;
+  line-height: 1.04 
 }
+
 
 .levelLanguages {
   display: flex;
@@ -147,6 +148,7 @@ body {
     var(--primary-bg) var(--value, 50%),
     var(--primary-bg) 100%
   );
+  color: transparent !important;
 }
 
 .level::-webkit-slider-thumb {
@@ -485,10 +487,9 @@ footer button {
   }
 }
 
-
 [contenteditable="true"] {
   display: block;
-  max-height: 3em; /* Show max 2 lines (1.5em line-height) */
+  max-height: 6em; 
   line-height: 1.5em;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -496,7 +497,6 @@ footer button {
   position: relative;
 }
 
-/* Show ellipsis when truncated */
 [contenteditable="true"]:after {
   content: '...';
   position: absolute;
@@ -504,22 +504,23 @@ footer button {
   bottom: 0;
   background: inherit;
   padding-left: 3px;
-  display: var(--show-ellipsis, none); /* Controlled by JS */
+  display: var(--show-ellipsis, none);
 }
 
-/* Expanded state */
 [contenteditable="true"]:focus {
-  max-height: 200px; /* Enough for editing */
+  max-height: 200px; 
   overflow: auto;
 }
 
-/* Hide ellipsis when editing */
 [contenteditable="true"]:focus:after {
   display: none;
 }
 
-
-
+p.English, p.Spanish, p.French {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.04 
+}
 
 
 @media (max-width: 600px) {
@@ -537,3 +538,4 @@ footer button {
     height: auto;
   }
 }
+
